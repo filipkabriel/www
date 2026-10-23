@@ -1,0 +1,143 @@
+/* 1. Celá stránka */
+body{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #c8b5e6;
+    color: #9769a6;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Nadpisy */
+h1{
+    color: #813bc3;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    color: #9f50ea;
+    border-bottom: 2px solid #9f50ea;
+}
+/* 3. Navigace a odkazy */
+nav{
+    padding: 15px;
+    background-color: #d79bd6;
+    text-align: center;
+    border-radius: 15px;
+}
+nav a{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #813bc3;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: #953e90;
+}
+/* 4. Hlavní obsah a jednotlivé sekce */
+main{
+    margin-top: 20px;
+}
+section{
+    background-color: #d79bd6;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* 5. Obrázky a jejich popisky */
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+figure{
+    padding: 10px;
+    background-color: #e4abe4;
+    border-radius: 10px;
+}
+figcaption{
+    text-align: center;
+    margin-top: 10px;
+
+}
+/* 6. Tabulka */
+table{
+    background-color: #e4abe4;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    border-spacing: 15px;
+}
+caption{
+    margin: 10px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #9f50ea;
+    width: 150px;
+    border-radius: 10px;
+}
+/* Selektory atributů - zacílí pouze na konkrétní typy vstupů */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box; /* Zajistí, že padding nerozhodí 100% šířku */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Zvýraznění aktivního pole, do kterého uživatel klikl */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus{
+    outline: none;
+    border-color: #813bc3;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+button[type="submit"],
+input[type="reset"]{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Úprava konkrétně pro BUTTON tlačítko */
+button[type="submit"],
+input[type="reset"]{
+    background-color: #813bc3;
+    color: #ffffff;
+}
+
+/* Reakce na přejetí myší */
+input[type="reset"]:hover { background-color: #d698d5; }
+button[type="submit"]:hover { background-color: #d698d5; }
+
+/* Efekt prokliknutí (tlačítko se maličko zmenší) */
+input[type="submit"]:active,
+button[type="submit"]:active {
+    transform: scale(0.96);
+}
+/* 7. Zápatí */
+
